@@ -363,3 +363,35 @@ button:focus {
     height: 2px;
     background-color: var(--color-accent);
 }
+
+/* Education */
+
+.educations {
+    margin: 3rem;
+}
+
+.education {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.education__img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.education__bubble {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+}
+
+.education__bubble_name {
+    color: var(--color-accent);
+    font-weight: bold;
+    filter: brightness(70%);
+}
