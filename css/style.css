@@ -395,3 +395,44 @@ button:focus {
     font-weight: bold;
     filter: brightness(70%);
 }
+
+/* Arrow up */
+.arrow-up{
+    background-color: var(--color-accent);
+    opacity: 30%;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    text-align: center;
+    transition: all 300ms ease-in;
+}
+
+.arrow-up:hover{
+    opacity: 90%;
+    scale: 1.1;
+}
+
+/* Footer */
+#contact {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.contact__links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.contact__link{
+    transition: color 250ms ease-in;
+}
+
+.contact__link:hover{
+    color: var(--color-accent);
+}
