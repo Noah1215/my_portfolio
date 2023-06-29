@@ -1,7 +1,7 @@
-//Make header dark when scrolling
+//Make header dark when scrolling down
 const header = document.querySelector('.header');
 
-// cosnt headerRect = header.getBoundingClientRect();
+// const headerRect = header.getBoundingClientRect();
 // const headerHeight = headerRect.height
 const headerHeight = header.getBoundingClientRect().height;
 
@@ -12,3 +12,12 @@ document.addEventListener('scroll', () => {
         header.classList.remove('header--dark');
     }
 });
+
+//makes home section transparent when scrolling down
+const home = document.querySelector('.home__container');
+const homeHeight = home.offsetHeight;
+
+document.addEventListener('scroll', () => {
+    home.style.opacity =  1 - (scrollY / homeHeight);
+    
+})
