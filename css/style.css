@@ -405,7 +405,6 @@ button:focus {
 /* Arrow up */
 .arrow-up{
     background-color: var(--color-accent);
-    opacity: 30%;
     position: fixed;
     bottom: 2rem;
     right: 2rem;
@@ -418,8 +417,7 @@ button:focus {
 }
 
 .arrow-up:hover{
-    opacity: 90%;
-    scale: 1.1;
+    scale: 1.2;
 }
 
 /* Footer */

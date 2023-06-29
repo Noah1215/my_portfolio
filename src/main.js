@@ -19,5 +19,17 @@ const homeHeight = home.offsetHeight;
 
 document.addEventListener('scroll', () => {
     home.style.opacity =  1 - (scrollY / homeHeight);
-    
-})
+
+});
+
+//arrow visible
+const arrow = document.querySelector('.arrow-up');
+
+document.addEventListener('scroll', () => {
+    if(scrollY > homeHeight/2){
+        arrow.style.opacity = 1;
+    }
+    else{
+        arrow.style.opacity = 0;
+    }
+});
