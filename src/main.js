@@ -33,3 +33,17 @@ document.addEventListener('scroll', () => {
         arrow.style.opacity = 0;
     }
 });
+
+//mobile navbar toggle
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+
+navbarToggle.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
+//Navbar close
+navbarMenu.addEventListener('click', () => {
+    navbarMenu.classList.remove('open');
+});
+
