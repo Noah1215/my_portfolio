@@ -20,7 +20,11 @@
 
 * {
     box-sizing: border-box;
-}    
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -240,7 +244,7 @@ button:focus {
 
 .skills__title{
     color: var(--color-accent);
-    margin: 0;
+    margin: 1rem 0;
     font-size: 1.2rem;
 }
 
@@ -404,7 +408,8 @@ button:focus {
 
 .education__img {
     width: 200px;
-    height: 150px;
+    height: 50px;
+    margin-bottom: 20px;
     object-fit: cover;
 }
 
@@ -461,7 +466,7 @@ button:focus {
 
 @media screen and (max-width: 768px) {
    .section{
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
    }
 
    .title{
@@ -497,8 +502,6 @@ button:focus {
 
    .header__nav{
     width: 100%;
-    text-align: center;
-    gap: 1rem;
    }
 
    #home{
@@ -534,10 +537,6 @@ button:focus {
   .projects{
     grid-template-columns: repeat(2,1fr);
   }
-
-  .education__title {
-    border: solid red 1px;
-    }
 
   .education{
     flex-direction: column;
