@@ -24,6 +24,8 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f14b1264ed.js" crossorigin="anonymous"></script>
 
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -32,6 +34,7 @@
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
   </head>
 <body>
     <!-- Header -->
@@ -58,13 +61,15 @@
     <main>
         <!-- Home -->
         <section id="home">
-          <div class="home__container">
+          <div class="max-container home__container">
             <img class="home__avatar" src="images/profile.png" alt="profile">
-            <h2 class="home__title">Hello <br /> I&#39;m 
-                <strong class="home__title--strong">Dream Coder</strong>, Noah</h2>
-            <p class="home__description">New graduate software engineer currently residing in Toronto, Canada</p>
-            <a class="home__contact" href="#contact">Contact Me</a>
-          </div>           
+            <div>
+              <h2 class="home__title" aria-label="Hello, I'm Dream Coder Noah">Hello <br /> I&#39;m 
+                  <strong class="home__title--strong">Dream Coder</strong>, Noah</h2>
+              <p class="home__description">New graduate software engineer currently residing in Toronto, Canada</p>
+              <a class="home__contact" href="#contact">Contact Me</a>
+            </div>
+          </div>   
         </section>
         <!-- About Me -->
         <section id="about" class="section max-container">
@@ -74,23 +79,23 @@
                 consequatur sed numquam illum distinctio enim quasi corrupti voluptas omnis ipsa? 
                 A ut harum aut nobis beatae.
             </p>
-                <ul class="majors">
-                    <li class="major">
-                        <i class="fa-brands fa-html5 major__icon"></i>
-                        <p class="major__title">Front-end</p>
-                        <p>HTML, CSS, JavaScript, TypeScript, React, Web APIs</p>                        
-                    </li>
-                    <li class="major">
-                        <i class="fa-solid fa-server major__icon"></i>
-                        <p class="major__title">Back-end</p>
-                        <p>JavaScript, NodeJs, Rest APIs, C, C++, Java</p>
-                    </li>
-                    <li class="major">
-                        <i class="fa-solid fa-magnifying-glass-plus major__icon"></i>
-                        <p class="major__title">Others</p>
-                        <p>Powerpoint, excel, words, ...</p>
-                    </li>
-                </ul>
+            <ul class="majors">
+                <li class="major">
+                    <i class="fa-brands fa-html5 major__icon"></i>
+                    <p class="major__title">Front-end</p>
+                    <p>HTML, CSS, JavaScript, TypeScript, React, Web APIs</p>                        
+                </li>
+                <li class="major">
+                    <i class="fa-solid fa-server major__icon"></i>
+                    <p class="major__title">Back-end</p>
+                    <p>JavaScript, NodeJs, Rest APIs, C, C++, Java</p>
+                </li>
+                <li class="major">
+                    <i class="fa-solid fa-magnifying-glass-plus major__icon"></i>
+                    <p class="major__title">Others</p>
+                    <p>Powerpoint, excel, words, ...</p>
+                </li>
+            </ul>
         </section>
         <!-- Skills -->
         <section id="skills" class="section">
@@ -307,22 +312,22 @@
     </main>
     <!-- Footer -->
     <footer id="contact" class="section">
-        <div class="max-container">
-            <h2 class="title">Let&#39;s talk</h2>
-            <p class="description">npark1215@gmail.com</p>
-            <ul class="contact__links">
-                <li>
-                    <a class="contact__link" href="https://github.com/Noah1215" target="_blank" title="my github link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="contact__link" href="#" target="_blank" title="my linkedin link">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="max-container">
+          <h2 class="title">Let&#39;s talk</h2>
+          <p class="description">npark1215@gmail.com</p>
+          <ul class="contact__links">
+              <li>
+                  <a class="contact__link" href="https://github.com/Noah1215" target="_blank" title="my github link">
+                      <i class="fa-brands fa-github"></i>
+                  </a>
+              </li>
+              <li>
+                  <a class="contact__link" href="#" target="_blank" title="my linkedin link">
+                      <i class="fa-brands fa-linkedin"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
     </footer>    
 </body>
 </html>
