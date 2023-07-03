@@ -3,8 +3,33 @@ https://www.typeitjs.com/
 https://cssgradient.io/
 https://www.shapedivider.app/
 https://dribbble.com/signup/new
+https://developer.mozilla.org/
 
 !! what I learned while making my portfolio !!
 
+1. SEO(Search Engine Optimization)
+- Making content search-friendly matters because it's how I get more relevant users viewing my content.
+  => exposing my content or site to the top when users searching.
 
+2. OG(Opean Graph)
+- provide richer metadata for websites, invented by Facebook
+  => It shows my content when I share url on social media.
 
+3. Why using script as 'module'?
+- Unlike a normal Javascript file, a module can specify which variables and functions can be accessed outside the module.
+  => I can access variables in a module from another module if I don't set type as module. Type 'module' => each module is independent .
+
+4. what is defer attribute of script?
+- the script is meant to be executed after the document has been parsed, but before firing DOMContentLoaded.
+  => document is parsed in the order then script is executed. (No src No defer, no effect on module script)
+
+5. What is BEM(Block, Element, Modifier)?
+- BEM is a front-end naming method for organizing and naming CSS classes.
+ => Block__Element--Modifier (e.g. header__form--search)
+
+6. What is difference between 'id' and 'class'
+- Id selector is applied only to single element in a page, whereas the class selector can be applied to multiple elements on a single page.
+
+7. what is 'aria-label' attribute ?
+- aria-label is intended for use on interactive elements, or elements made to be interactive via other ARIA declarations, when there is no appropriate text visible in the DOM that could be referenced as a label
+ => define the accessible name of an element, if there is no accessible or accurate name. Don't 'overuse' aria-labe.
