@@ -7,6 +7,7 @@ https://developer.mozilla.org/
 
 !! what I learned while making my portfolio !!
 
+// HTML
 1. SEO(Search Engine Optimization)
 - Making content search-friendly matters because it's how I get more relevant users viewing my content.
   => exposing my content or site to the top when users searching.
@@ -32,4 +33,88 @@ https://developer.mozilla.org/
 
 7. what is 'aria-label' attribute ?
 - aria-label is intended for use on interactive elements, or elements made to be interactive via other ARIA declarations, when there is no appropriate text visible in the DOM that could be referenced as a label
- => define the accessible name of an element, if there is no accessible or accurate name. Don't 'overuse' aria-labe.
+ => define the accessible name of an element, if there is no accessible or accurate name. Don't 'overuse' aria-label.
+
+8. alt attribute in img tag
+- The required alt attribute specifies an alternate text for an image, if the image cannot be displayed.
+ => It provides alternative info for an image if a user can not view it.
+
+9. what is meta tag?
+- The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
+ => It always go inside <head> element and is not be displayed on the page, but is machine parsable.
+
+10. data-* attribute
+- data-* Attributes allow us to store extra information on standard, semantic HTML elements without other hacks such as non-standard attributes, or extra properties on DOM.
+- To get a data attribute in JS using 'dataset'
+e.g) 
+                          JS) const article = document.querySelector('')
+data-columns="3"          => article.dataset.columns
+data-index-number="12314" => article.dataset.indexNumber
+data-parent="cars"        => article.dataset.parent
+
+//CSS 
+!! Selector practice (https://flukeout.github.io/) !!
+
+1. why using variable in css?
+- CSS variables let us create our own custom values so our code is easier to understand and edit.
+ => Reducing repetition and easy to edit
+
+2. what is 'rem' ?
+- the rem unit means "the root element's font-size" ('root em')
+
+3. what is the difference between rem and px ?
+- Pixels are an absolute unit, Rems are relative units that are based on the document's font-size.
+
+4. Absolute vs Relative vs Static in positioning
+- Static: by default, position an element based on its current position in the flow
+- Relative: Position an element based on its current position without changing layout -> not affect the layout around it
+- Absolute: Position and element based on its closest positioned ancestor position. -> may affect the layout around it (like independent)
+(https://www.w3schools.com/css/css_positioning.asp)
+
+5. Padding vs margin
+- Margin is the space around an element's border, while padding is the space between a border and content.
+ => Margin controls the space outside an element, the padding controls the space inside an element
+
+ 6. How to set margin
+ - margin: 25px 50px 75px 100px => (top, right, bottom, left)
+ - margin: 25px 50px 75px => (top, right and left, bottom)
+ - margin: 25px 50px => (top and bottom, right and left)
+ - margin: 25px => (all four sides)
+ - margin: auto => set to horizontally center the element within its container
+ - margin: inherit => margin of an element be inherited from the parent element
+
+ 7. display: flex
+ - Items display in a row (default is row)
+ - flex-direction => change the direction(row, row-reverse, columnm, column-reverse)
+ - flex-wrap: wrap => items be too large to all display in one line, they will wrap onto another line
+ - flex-wrap: nowrap => items shrink to fit the container
+
+ 8. justify-content
+ - defines how the browser distributes space between and around content items along the main-axis of a flex container.
+ (https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
+ - center: The items are packed flush to each other toward the center of the alignment container along the main axis.
+ - space-between: The spacing between each pair of adjacent items is the same.
+
+9. align-items
+- The align-items property specifies the default alignment for items inside a flexbox or grid container.
+- In a flexbox container, the flexbox items are aligned on the cross axis, which is vertical by default (opposite of flex-direction).
+=> align items vertically
+
+10. ::after 
+- It creates a pseudo-element that is the last child of the selected element.
+- It is used to add cosmetic content to an element.
+- Add any content(text or images) in the 'content' prorperty
+
+11. display: grid
+- CSS Grid Layout is a two-dimensional (flex is one-dimensional) grid-based layout system
+- set the column and row sizes with grid-template-columns and grid-template-rows
+- use 'fr' => Fr is a fractional unit and 1fr is for 1 part of the available space
+(https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+12. mask
+- The mask CSS shorthand property hides an element (partially or fully) by masking or clipping the image at specific points.
+
+
+
+
+
