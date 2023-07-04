@@ -20,7 +20,7 @@ https://developer.mozilla.org/
 - Unlike a normal Javascript file, a module can specify which variables and functions can be accessed outside the module.
   => I can access variables in a module from another module if I don't set type as module. Type 'module' => each module is independent .
 
-4. what is defer attribute of script?
+4. what is 'defer' attribute of script?
 - the script is meant to be executed after the document has been parsed, but before firing DOMContentLoaded.
   => document is parsed in the order then script is executed. (No src No defer, no effect on module script)
 
@@ -35,11 +35,11 @@ https://developer.mozilla.org/
 - aria-label is intended for use on interactive elements, or elements made to be interactive via other ARIA declarations, when there is no appropriate text visible in the DOM that could be referenced as a label
  => define the accessible name of an element, if there is no accessible or accurate name. Don't 'overuse' aria-label.
 
-8. alt attribute in img tag
+8. 'alt' attribute in img tag
 - The required alt attribute specifies an alternate text for an image, if the image cannot be displayed.
  => It provides alternative info for an image if a user can not view it.
 
-9. what is meta tag?
+9. what is 'meta' tag?
 - The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
  => It always go inside <head> element and is not be displayed on the page, but is machine parsable.
 
@@ -62,7 +62,7 @@ data-parent="cars"        => article.dataset.parent
 2. what is 'rem' ?
 - the rem unit means "the root element's font-size" ('root em')
 
-3. what is the difference between rem and px ?
+3. what is the difference between 'rem' and 'px' ?
 - Pixels are an absolute unit, Rems are relative units that are based on the document's font-size.
 
 4. Absolute vs Relative vs Static in positioning
@@ -71,7 +71,7 @@ data-parent="cars"        => article.dataset.parent
 - Absolute: Position and element based on its closest positioned ancestor position. -> may affect the layout around it (like independent)
 (https://www.w3schools.com/css/css_positioning.asp)
 
-5. Padding vs margin
+5. Padding vs Margin
 - Margin is the space around an element's border, while padding is the space between a border and content.
  => Margin controls the space outside an element, the padding controls the space inside an element
 
@@ -113,6 +113,108 @@ data-parent="cars"        => article.dataset.parent
 
 12. mask
 - The mask CSS shorthand property hides an element (partially or fully) by masking or clipping the image at specific points.
+
+//Javascript
+
+1. 'var' vs 'let' vs 'const'
+(https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/)
+- let => added in ES6(ECMA script)
+      => mutable (can be updated but not re-declared)
+      => if the same variable is defined in different scopes, there will be no error
+      => block scoped
+      => Hoisting: Unlike var which is initialized as undefined, the let keyword is not initialized
+
+- var => var hoisting(move declaration from bottom to top before code execution)
+      => mutable
+      => globally scoped or function scoped
+      => var variables can be re-declared
+
+- const(constant) => immutable data type (cannot be updated or re-declared)
+                  => black scoped
+                  => security
+                  => thread safety
+                  => reduce human mistakes
+                  => Hoisting: it is hoisted to the top of their scope but not initialized
+                  => must be initialized during declaration
+
+2. querySelector
+- it returns the first element within the document that mathches the specified selector, or group of selectors
+- if no match, it returns null
+- if a list of all elements needed, use querySelectorAll() method
+- '\' backslash is also an escape character in Js
+- CSS.escape('') => also works
+
+3. getBoundingClientRect
+- it returns DOMReact object providing information about the size of an element and its position relative to the viewport
+- width and height properties of the DOMRect object returns by the method include the padding and border-width, not only the content width/height
+- if box-sizing: border-box is set -> this would be directly equal to its width or height
+- empty border-boxes are completely ignored
+ 
+4. getElementById vs querySelector
+(https://dev.to/colelevy/queryselector-vs-getelementbyid-166n#:~:text=Differences%20between%20querySelector()%20and,work%20with%20any%20CSS%20selector.)
+- getElementById only works with ID attributes, while querySelector can work with any CSS selector
+- getElementById is also faster than querySelector
+- querySelector is used to select the first matching element of a group of elements
+
+5. addEventListener
+- The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target.
+- It does not override the existing event handlers.
+- do not use any prefix such as 'on' with the parameter value. ('click' not 'onclick')
+- syntax: element.addEventListener(event, function, useCapture)
+- 'event' and 'function' are required but useCapture is optional
+- 'useCapture' => Boolean type value that specifies whether the event is executed in the bubbling or capturing phase.
+- 'useCapture' => default value is false(the handler executes in the bubbling phase), true(in the capturing phase)
+
+6. event bubbling vs event capturing
+(https://developer.mozilla.org/ko/docs/Web/API/Event/eventPhase)
+- bubbling: When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
+- capturing - propagation of event is done from ancestor elements to child element in the DOM. (opposite of bubbling)
+
+7. offsetHeight
+- It returns the visible height of an element in pixels that includes the height of visible content, border, padding, and scrollbar if present.
+- offsetWidth, offsetHeight include height/width + border + padding+ horizontal/vertical scrollbar, not includes margin
+
+8. classList
+- syntax: element.classList.method()
+- methods: add(),remove(),replace(),toggle(),contains()
+- contains => check if there is specific class or not, then returns true/false
+- toggle => The toggle() method removes the CSS class from the class list of the element if the specified CSS class is present, if the specified CSS class is not present then it adds the CSS class.
+
+9. event.target
+- It refers to the object on which the event will occur
+- Event Occurence Process: event target(html element) -> when a specified event type (click/scroll/etc) occurs -> the specified event handler (function) is executed
+- access tagName, id, textContent.. etc
+{
+  event.target.tagName
+  event.target.id
+  event.target.textContent
+}
+
+10. element.style
+- access style of element, e.g) element.style.display = ? or element.style.opacity = ? 
+
+11. map
+(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- syntax: array.map(function(currentValue, index, arr), thisValue)
+- return an array
+- The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+- The map() method is an iterative method.
+
+12. IntersectionObserver
+(https://merrily-code.tistory.com/228) -> In Korean
+- An intersection observer is an object that can detect "whether an element appears on the screen (viewport) and, if so, where and how much it appears."
+- properties
+{
+  - boundingClientReact : the size and location of the element.
+  - intersectionRatio : how much the element is exposed to the screen (1 => 100% exposure)
+  - intersectionRect: the size and location of the exposed elements on the screen
+  - isIntersecting : is exposed or not on the screen
+  - target : the selector of the element being detected
+  - rootBounds : the size and location of the root element surrounding target
+  - time : the time since the document was first loaded
+  ... 
+}
+- threshold: adjust the rate at which an element is detected (0(0%) to 1(100%))
 
 
 
