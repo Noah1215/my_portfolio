@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- SEO (Search Engine Optimization) -->
     <title>Noah&#39;s Portfolio</title>
-    <meta name="description" content="Portfolio for Chanwoong(Noah) Park"/>
-    <meta name="author" content="Chanwoong(Noah) Park"/>
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    
+    <meta name="description" content="Portfolio for Chanwoong(Noah) Park" />
+    <meta name="author" content="Chanwoong(Noah) Park" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
     <!-- Open Graph Data (OG) -->
-    <meta property="og:title" content="Noah's Portfolio"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://noah1215.github.io/portfolio/"/>
-    <meta property="og:image" content="https://noah1215.github.io/portfolio/images/og.webp"/>
-    
+    <meta property="og:title" content="Noah's Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://noah1215.github.io/portfolio/" />
+    <meta
+      property="og:image"
+      content="https://noah1215.github.io/portfolio/images/og.webp"
+    />
+
     <!-- Google Poppins font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/f14b1264ed.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f14b1264ed.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Typeit -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
@@ -37,298 +46,387 @@
     <script type="module" src="src/active_menu.js"></script>
     <script type="module" src="src/type.js"></script>
   </head>
-<body>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="header__logo">
-            <img class="header__logo__img" src="images/favicon.ico" alt="logo">
-            <h1 class="header__logo__title"><a href="#">Noah&#39;s Portfolio</a></h1>
-        </div>
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li><a class="header__menu__item active" href="#home">Home</a></li>
-                <li><a class="header__menu__item" href="#about">About</a></li>
-                <li><a class="header__menu__item" href="#skills">Skills</a></li>
-                <li><a class="header__menu__item" href="#work">Work</a></li>
-                <li><a class="header__menu__item" href="#education">Education</a></li>
-                <li><a class="header__menu__item" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="header__toggle" aria-label="navigation menu toggle">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+      <div class="header__logo">
+        <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
+        <h1 class="header__logo__title">
+          <a href="#">Noah&#39;s Portfolio</a>
+        </h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#work">Work</a></li>
+          <li><a class="header__menu__item" href="#education">Education</a></li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
     <!-- Main -->
     <main>
-        <!-- Home -->
-        <section id="home">
-          <div class="max-container home__container">
-            <img class="home__avatar" src="images/profile.png" alt="profile">
-            <div>
-              <h2 class="home__title" aria-label="Hello, I'm Dream Coder Noah">Hello <br /> I&#39;m 
-                  <strong class="home__title--strong">Dream Coder</strong>, Noah</h2>
-              <p class="home__description">New graduate software engineer currently residing in Toronto, Canada</p>
-              <a class="home__contact" href="#contact">Contact Me</a>
-            </div>
-          </div>   
-        </section>
-        <!-- About Me -->
-        <section id="about" class="section max-container">
-            <h2 class="title">About me</h2>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Voluptate ipsum praesentium nobis sit, 
-                consequatur sed numquam illum distinctio enim quasi corrupti voluptas omnis ipsa? 
-                A ut harum aut nobis beatae.
+      <!-- Home -->
+      <section id="home">
+        <div class="max-container home__container">
+          <img class="home__avatar" src="images/profile.png" alt="profile" />
+          <div>
+            <h2 class="home__title" aria-label="Hello, I'm Dream Coder Noah">
+              Hello <br />
+              I&#39;m <strong class="home__title--strong">Coding Lover</strong>,
+              Noah
+            </h2>
+            <p class="home__description">
+              New graduate software engineer currently residing in Toronto,
+              Canada
             </p>
-            <ul class="majors">
-                <li class="major">
-                    <i class="fa-brands fa-html5 major__icon"></i>
-                    <p class="major__title">Front-end</p>
-                    <p>HTML, CSS, JavaScript, TypeScript, React, Web APIs</p>                        
-                </li>
-                <li class="major">
-                    <i class="fa-solid fa-server major__icon"></i>
-                    <p class="major__title">Back-end</p>
-                    <p>JavaScript, NodeJs, Rest APIs, C, C++, Java</p>
-                </li>
-                <li class="major">
-                    <i class="fa-solid fa-magnifying-glass-plus major__icon"></i>
-                    <p class="major__title">Others</p>
-                    <p>Powerpoint, excel, words, ...</p>
-                </li>
-            </ul>
-        </section>
-        <!-- Skills -->
-        <section id="skills" class="section">
-           <div class="max-container">
-            <h2 class="title">My Skills</h2>
-            <p class="description">Skills & Attributes</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Deserunt id, odio voluptatem eius voluptates, vitae, 
-                et aperiam molestiae natus ad itaque doloremque sapiente excepturi voluptatibus! 
-                Voluptatibus velit dolorum fugit veniam?
+            <a class="home__contact" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </section>
+      <!-- About Me -->
+      <section id="about" class="section max-container">
+        <h2 class="title">About me</h2>
+        <p class="description">
+          I am a person who enjoys learning new things.<br />
+          In particular, I love to achieve through many failures in learning.<br />
+          I try steadily to overcome my weaknesses, never give up for my
+          goal.<br />
+          To achieve my goal, I am currently studying these things.
+        </p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">Front-end</p>
+            <p>HTML, CSS, JavaScript, React, Web APIs</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__title">Back-end</p>
+            <p>JavaScript, NodeJs, Rest APIs, C, C++, Java, MongoDB</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-magnifying-glass-plus major__icon"></i>
+            <p class="major__title">Others</p>
+            <p>Powerpoint, excel, words, ...</p>
+          </li>
+        </ul>
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="max-container">
+          <h2 class="title">My Skills</h2>
+          <p class="description">Skills & Attributes</p>
+          <div class="skills__stages">
+            <p><span class="skills__stages--title">Beginner:</span> 0 - 20%</p>
+            <p>
+              <span class="skills__stages--title">Competent:</span> 20% - 60%
             </p>
-            <div class="skills">
-                <section class="skills__coding">
-                    <h3 class="skills__title">Coding Skills</h3>
-                    <ul>
-                        <li class="bar">
-                            <div class="bar__metadata"><span>HTML</span><span>80%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 80%"></div></div>
-                        </li>
-                        <li class="bar">
-                            <div class="bar__metadata"><span>CSS</span><span>80%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 80%"></div></div>
-                        </li>
-                        <li class="bar">
-                            <div class="bar__metadata"><span>JavaScript</span><span>75%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 75%"></div></div>
-                        </li>                       
-                        <li class="bar">
-                            <div class="bar__metadata"><span>TypeScript</span><span>65%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 65%"></div></div>
-                        </li>
-                        <li class="bar">
-                            <div class="bar__metadata"><span>React</span><span>70%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 70%"></div></div>
-                        </li>
-                        <li class="bar">
-                            <div class="bar__metadata"><span>NodeJs</span><span>65%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 65%"></div></div>
-                        </li>
-                        <li class="bar">
-                            <div class="bar__metadata"><span>C</span><span>85%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 85%"></div></div>
-                        </li>
-                        <li class="bar">
-                            <div class="bar__metadata"><span>C++</span><span>85%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 85%"></div></div>
-                        </li>
-                        <li class="bar">
-                            <div class="bar__metadata"><span>Java</span><span>70%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 70%"></div></div>
-                        </li>
-                    </ul>
-                </section>
-                <section class="skills__tools">
-                    <h3 class="skills__title">Tools</h3>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>Visual Studio 2022</li>
-                        <li>Eclipse</li>
-                    </ul>
-                </section>
-                <section class="skills__etc">
-                    <h3 class="skills__title">Etc</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>Power Point</li>
-                        <li>Excel</li>
-                        <li>Math</li>
-                    </ul>
-                </section>
-            </div>
-           </div>
-        </section>
-        <!-- Work -->
-        <section id="work" class="section">
-            <div class="max-container">
-                <h2 class="title">My Work</h2>
-                <p class="description">Projects</p>
-                <ul class="categories">
-                    <li><button class="category category--selected" data-category="all">All <span class="category__count">8</span></button></li>
-                    <li><button class="category" data-category="front-end">Front-end <span class="category__count">4</span></button></li>
-                    <li><button class="category" data-category="back-end">Back-end <span class="category__count">2</span></button></li>
-                    <li><button class="category" data-category="full-stack">Full-Stack <span class="category__count">2</span></button></li>
-                </ul>
-                <ul class="projects">
-                    <li class="project" data-type="front-end">
-                      <a href="#" target="_blank">
-                        <img
-                          src="images/projects/project1.webp"
-                          alt="project1"
-                          class="project__img"
-                        />
-                        <div class="project__metadata">
-                          <h3 class="project__title">Project #1</h3>
-                          <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="project" data-type="front-end">
-                      <a href="#" target="_blank">
-                        <img
-                          src="images/projects/project2.webp"
-                          alt="project2"
-                          class="project__img"
-                        />
-                        <div class="project__metadata">
-                          <h3 class="project__title">Project #2</h3>
-                          <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="project" data-type="back-end">
-                      <a href="#" target="_blank">
-                        <img
-                          src="images/projects/project3.webp"
-                          alt="project3"
-                          class="project__img"
-                        />
-                        <div class="project__metadata">
-                          <h3 class="project__title">Project #3</h3>
-                          <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="project" data-type="full-stack">
-                      <a href="#" target="_blank">
-                        <img
-                          src="images/projects/project4.webp"
-                          alt="project4"
-                          class="project__img"
-                        />
-                        <div class="project__metadata">
-                          <h3 class="project__title">Project #4</h3>
-                          <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="project" data-type="back-end">
-                      <a href="#" target="_blank">
-                        <img
-                          src="images/projects/project5.webp"
-                          alt="project5"
-                          class="project__img"
-                        />
-                        <div class="project__metadata">
-                          <h3 class="project__title">Project #5</h3>
-                          <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="project" data-type="front-end">
-                      <a href="#" target="_blank">
-                        <img
-                          src="images/projects/project6.webp"
-                          alt="project6"
-                          class="project__img"
-                        />
-                        <div class="project__metadata">
-                          <h3 class="project__title">Project #6</h3>
-                          <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="project" data-type="full-stack">
-                      <a href="#" target="_blank">
-                        <img
-                          src="images/projects/project7.webp"
-                          alt="project7"
-                          class="project__img"
-                        />
-                        <div class="project__metadata">
-                          <h3 class="project__title">Project #7</h3>
-                          <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="project" data-type="front-end">
-                      <a href="#" target="_blank">
-                        <img
-                          src="images/projects/project8.webp"
-                          alt="project8"
-                          class="project__img"
-                        />
-                        <div class="project__metadata">
-                          <h3 class="project__title">Project #8</h3>
-                          <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-            </div>
-            <!-- TODO: link to my projects -->
-        </section>
-        <!-- Education -->
-        <section id="education" class="section max-container">
-            <h2 class="title education__title">Education</h2>
-            <ul class="educations">
-                <li class="education">
-                    <img class="education__img" src="images/college/seneca.png" alt="seneca">
-                    <div class="education__bubble">
-                        <p class="education__bubble_name">Seneca College</p>
-                        <p>Computer Programming</p>
-                        <p>Period</p>
-                    </div>
+            <p>
+              <span class="skills__stages--title">Proficient:</span> 60% - 90%
+            </p>
+            <p><span class="skills__stages--title">Expert:</span> 90% - 100%</p>
+          </div>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3 class="skills__title">Coding Skills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>HTML</span><span>85%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 85%"></div>
+                  </div>
                 </li>
-            </ul>
-        </section>
-        <!-- Arrow up -->
-        <aside>
-            <a class="arrow-up" href="#home" title="back to top">
-                <i class="fa-solid fa-arrow-up"></i>
-            </a>
-        </aside>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>CSS</span><span>85%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 85%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>JavaScript</span><span>75%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 75%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>TypeScript</span><span>55%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 55%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>React</span><span>60%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 60%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>NodeJs</span><span>70%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 70%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>C</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>C++</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Java</span><span>50%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 50%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>Visual Studio 2022</li>
+                <li>Eclipse</li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>Git</li>
+                <li>Power Point</li>
+                <li>Excel</li>
+                <li>Math</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Work -->
+      <section id="work" class="section">
+        <div class="max-container">
+          <h2 class="title">My Work</h2>
+          <p class="description">Projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected" data-category="all">
+                All <span class="category__count">8</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="front-end">
+                Front-end <span class="category__count">4</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="back-end">
+                Back-end <span class="category__count">2</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="full-stack">
+                Full-Stack <span class="category__count">2</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project1.webp"
+                  alt="project1"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project2.webp"
+                  alt="project2"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #2</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="back-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project3.webp"
+                  alt="project3"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #3</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="full-stack">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project4.webp"
+                  alt="project4"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #4</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="back-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project5.webp"
+                  alt="project5"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #5</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project6.webp"
+                  alt="project6"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #6</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="full-stack">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project7.webp"
+                  alt="project7"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #7</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project8.webp"
+                  alt="project8"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #8</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- TODO: link to my projects -->
+      </section>
+      <!-- Education -->
+      <section id="education" class="section max-container">
+        <h2 class="title education__title">Education</h2>
+        <ul class="educations">
+          <li class="education">
+            <img
+              class="education__img"
+              src="images/college/seneca.png"
+              alt="seneca"
+            />
+            <div class="education__bubble">
+              <p class="education__bubble_name">Seneca College</p>
+              <p>Computer Programming</p>
+              <p>Period</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Arrow up -->
+      <aside>
+        <a class="arrow-up" href="#home" title="back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
     </main>
     <!-- Footer -->
     <footer id="contact" class="section">
       <div class="max-container">
-          <h2 class="title">Let&#39;s talk</h2>
-          <p class="description">npark1215@gmail.com</p>
-          <ul class="contact__links">
-              <li>
-                  <a class="contact__link" href="https://github.com/Noah1215" target="_blank" title="my github link">
-                      <i class="fa-brands fa-github"></i>
-                  </a>
-              </li>
-              <li>
-                  <a class="contact__link" href="#" target="_blank" title="my linkedin link">
-                      <i class="fa-brands fa-linkedin"></i>
-                  </a>
-              </li>
-          </ul>
+        <h2 class="title">Contact Me</h2>
+        <p class="description">npark1215@gmail.com</p>
+        <p class="contact__phone">
+          <i class="fa-solid fa-square-phone contact__phone--icon"></i> (+1) 647
+          569 6633
+        </p>
+        <hr />
+        <p style="margin-top: 0.5rem; font-size: 1.3rem; color: #ffc03c">
+          Links
+        </p>
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/Noah1215"
+              target="_blank"
+              title="my github link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="#"
+              target="_blank"
+              title="my linkedin link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>    
-</body>
+    </footer>
+  </body>
 </html>
